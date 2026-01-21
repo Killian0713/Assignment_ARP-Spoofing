@@ -26,6 +26,11 @@ In the victim VM, launch this command : `arp -a`
 
 We see the arp table before the attack.
 
+In the VM-attacker, launch this comamnd : 
+```
+echo 1 > /proc/sys/net/ipv4/ip_forward
+```
+
 Launch the attack with the `script.py` with the attacker VM.
 
 Wait 5 seconds.
@@ -33,6 +38,10 @@ Wait 5 seconds.
 After, relaunch `arp -a` to see the changes mades by the attacker.
 
 So see the traffic by the victim, the attacker can use Wireshark (ens33).
+
+## Video 
+
+https://youtu.be/_RloPu2TLho
 
 
 
